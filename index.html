@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>早安你好  </title>
-			<style>
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("ul").hide();
+            });
+            $("#show").click(function () {
+                $("ul").show();
+            });
+        });
+    </script>
+    <title>早安你好  </title>
+    <style>
         h2 {
-          font-family: 'Montserrat', sans-serif;
-          font-size:38px;
-          margin-top: 0px;
-          margin-left: 300px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 38px;
+            margin-top: 0px;
+            margin-left: 300px;
         }
+
         p2 {
-          font-family: 'Montserrat', sans-serif;
-          font-size:30px;
-          margin-top: 0px;
-          margin-left: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            margin-top: 0px;
+            margin-left: 50px;
         }
-				h1{
-          font-family: 'Alkalami', serif;
-          margin-top: 5px;
-          margin-left: 450px;
-        }
-        .l{
-          margin-left:300px;
-        }
-        .k{
-          font-size: 23px;
-        }
-        body{
-          background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); 
-          }
-			</style>
-		
 
-	</head>
-	<body style="background-position: center center; background-size:cover; background-attachment: fixed;">
-		<font size="5"><h1>My Personal Page</h1></font>
-    <font><h2>輔仁大學資工系呂昇晉</h2></font>
-    <font></font>
-    <p2 class="l">興趣:</p2>
-    <ul class="l k"id="ll">
-      <li>打籃球</li>
-      <li>釣魚</li>
-      <li>睡覺</li>
-    </ul>
-    </body>
+        h1 {
+            font-family: 'Alkalami', serif;
+            margin-top: 5px;
+            margin-left: 450px;
+        }
+
+        .l {
+            margin-left: 300px;
+        }
+
+        .k {
+            font-size: 23px;
+        }
+
+        body {
+            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+        }
+
+    </style>
+
+
+</head>
+<body style="background-position: center center; background-size:cover; background-attachment: fixed;">
+    <font size="5"><h1>My Personal Page</h1></font>
+    <font><h2 id="aa">輔仁大學資工系呂昇晉</h2></font>
+    <div class="l">
+        興趣:</div>
+        <ul class="l k "style="display: none" id="ll">
+            <li>打籃球</li>
+            <li>釣魚</li>
+            <li>睡覺</li>
+        </ul>
+        <button id="hide" type="button" class="l">隱藏</button>
+        <button id="show" type="button">顯示</button>
+        
+        
+</body>
 </html>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
-$(document).ready(function() {
-    $("#ll").addClass("animated shake");
 
-</script>
