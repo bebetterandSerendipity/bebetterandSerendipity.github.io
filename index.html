@@ -5,12 +5,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+            $("button").addClass("animated bounce");
             $("#hide").click(function () {
-                $("ul").hide();
+                $("ul").slideToggle("slow");
+               
             });
             $("#show").click(function () {
-                $("ul").show();
+                $("ul").slideToggle("slow");
+             
             });
+            $(".f").click(function () {
+                $(".g").slideToggle("slow");
+                
+            });
+            
         });
     </script>
     <title>早安你好  </title>
@@ -46,6 +54,27 @@
         body {
             background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
         }
+        .f {
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            background: #E09697;
+            cursor: pointer;
+            font-family: 'Arial';
+            margin-bottom: 0px;
+        }
+
+        .g {
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            background: #e5eecc;
+            border: solid 1px #c3c3c3;
+            display: none;
+            font-family: 'Arial';
+            margin-bottom: 0px;
+        }
+
 
     </style>
 
@@ -53,18 +82,21 @@
 </head>
 <body style="background-position: center center; background-size:cover; background-attachment: fixed;">
     <font size="5"><h1>My Personal Page</h1></font>
-    <font><h2 id="aa">輔仁大學資工系呂昇晉</h2></font>
+    <font><h2 id="aa">輔仁大學資工系</h2></font>
     <div class="l">
-        興趣:</div>
-        <ul class="l k "style="display: none" id="ll">
-            <li>打籃球</li>
-            <li>釣魚</li>
-            <li>睡覺</li>
-        </ul>
-        <button id="hide" type="button" class="l">隱藏</button>
-        <button id="show" type="button">顯示</button>
-        
-        
+        興趣:
+    </div>
+    <ul class="l k " style="display: none" id="ll">
+        <li>打籃球</li>
+        <li>釣魚</li>
+        <li>睡覺</li>
+    </ul>
+    <button id="hide" type="button" class="l">隱藏</button>
+    <button id="show" type="button">顯示</button>
+
+    <div class="f"><span class="1 ">Read more</span></div>
+    <div class="g">沒了</div>
+
+
 </body>
 </html>
-
